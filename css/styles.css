@@ -12,3 +12,14 @@ img {
 ul {
   list-style-type: none;
 }
+
+.btn-success {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+#fido {
+  display: none;
+}
