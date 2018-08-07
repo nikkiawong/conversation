@@ -1,7 +1,9 @@
-// var fidoImg = new Image();
-// fidoImg.src = "<img src=\"img/fido.jpg\">"
+var fidoImg = new Image();
+fidoImg.src = "img/fido.jpg"
 
-$(document).ready(function() {
+var jQueryObject = $(document);
+
+jQueryObject.ready(function() {
   $("button#meow").click(function() {
     $("ul#cat").prepend("<li>MEOW!</li>");
     $("ul#dog").prepend("<li>WOOF!</li>");
@@ -13,10 +15,10 @@ $(document).ready(function() {
   });
 
   $("button#fidobtn").click(function() {
-    $("button#fidobtn").after("<img src=\"img/fido.jpg\">");
+    $("button#fidobtn").after(fidoImg);
   });
 
-  // $("button#hideFidoBtn").click(function() {
-  //   $("button#hideFidoBtn").remove("<img src=\"img/fido.jpg\">");
-  // });
+  $("button#hideFidoBtn").click(function() {
+    $(fidoImg).remove();
+  });
 });
